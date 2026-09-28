@@ -1,3 +1,7 @@
+```@meta
+CurrentModule = MyPkg78
+```
+
 # MyPkg78.jl
 
 [![Julia 1.12+](https://badgen.net/static/Julia/1.12%2B/007ec6?icon=https%3A%2F%2Fraw.githubusercontent.com%2FJuliaLang%2Fjulia-logo-graphics%2Fmaster%2Fimages%2Fjulia-dots.svg)](https://julialang.org/downloads/)
@@ -8,6 +12,10 @@
 
 Tesging on Cloudflare
 
+This package requires Julia 1.12 or later because it uses Pkg workspaces.
+See `[compat]` in [Project.toml](https://github.com/ohno/MyPkg78.jl/blob/main/Project.toml)
+for the supported versions.
+
 ## Quick Start
 
 Run the following command in the Julia REPL or a notebook:
@@ -16,15 +24,16 @@ Run the following command in the Julia REPL or a notebook:
 import Pkg; Pkg.add(url="https://github.com/ohno/MyPkg78.jl.git")
 ```
 
-After installation, load the package and verify it works:
+After installation, run the following to load the package and verify it works:
 
-```julia
-julia> import MyPkg78; MyPkg78.hello()
-"Hello, World!"
+```@repl
+import MyPkg78; MyPkg78.hello()
 ```
 
-## Documentation
+## API Reference
 
-- Home: https://ohno.github.io/MyPkg78.jl
-- Examples: https://ohno.github.io/MyPkg78.jl/dev/examples/
-- API Reference: https://ohno.github.io/MyPkg78.jl/dev/api
+For the generated API index and docstrings, see the [API Reference](api.md).
+
+## Acknowledgments
+
+This package is written in the [Julia programming language](https://julialang.org/), built on an initial project template generated using [PkgFactory.jl](https://github.com/JuliaPackageFactory/PkgFactory.jl). This repository is hosted on [GitHub](https://github.com/ohno/MyPkg78.jl), and continuous integration is run using [GitHub Actions](https://github.com/ohno/MyPkg78.jl/actions).
